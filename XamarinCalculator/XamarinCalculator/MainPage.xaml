@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinCalculator.MainPage" BackgroundColor="#ececec">
+
+    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" WidthRequest="300" BackgroundColor="#ececec">
+        <Entry x:Name="entrySayi1" Placeholder="Birinci Sayıyı Giriniz" Keyboard="Numeric" HorizontalTextAlignment="Center"></Entry>
+        <Entry x:Name="entrySayi2" Placeholder="İkinci Sayiyi Giriniz" Keyboard="Numeric" HorizontalTextAlignment="Center"></Entry>
+        <StackLayout Orientation="Horizontal">
+            <Button x:Name="btnTopla" Text="+" Clicked="BtnHesapla_OnClicked" HorizontalOptions="CenterAndExpand" WidthRequest="50"></Button>
+            <Button x:Name="btnCikar" Text="-" Clicked="BtnHesapla_OnClicked" HorizontalOptions="CenterAndExpand" WidthRequest="50"></Button>
+            <Button x:Name="btnCarp" Text="*" Clicked="BtnHesapla_OnClicked" HorizontalOptions="CenterAndExpand" WidthRequest="50"></Button>
+            <Button x:Name="btnBol" Text="/" Clicked="BtnHesapla_OnClicked" HorizontalOptions="CenterAndExpand" WidthRequest="50"></Button>
+        </StackLayout>
+        <Label x:Name="lblSnc" IsVisible="False" HorizontalTextAlignment="Center">Sonuç</Label>
+        <Label x:Name="lblSonuc" IsVisible="False" HorizontalTextAlignment="Center" FontSize="25"></Label>
+    </StackLayout>
+
+</ContentPage>
